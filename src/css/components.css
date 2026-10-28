@@ -15,7 +15,7 @@
   text-align: center;
   cursor: pointer;
 }
-.btn:hover { filter: brightness(1.1); transform: scale(1.06);}
+.btn:hover { filter: brightness(1.1);}
 .btn--outline { background: transparent; color: var(--color-text); border-color: var(--color-text); }
 .btn--block { width: 100%; font-size: 1.05rem; }
 .btn-matricula { padding: 5px 10px; font-size: 0.95rem; border-radius: var(--radius-lg); }
