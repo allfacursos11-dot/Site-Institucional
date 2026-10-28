@@ -2,7 +2,7 @@
 // MAIN: WhatsApp (botão flutuante e formulário de contato)
 // ==========================================================================
 
-// Só dígitos, com 55 + DDD
+
 const WHATSAPP_NUMBER = "556139654339";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
@@ -44,7 +44,7 @@ form.addEventListener("submit", (event) => {
 });
 
 // ==========================================================================
-// MENU HAMBÚRGUER
+// MENU BÚRGUER
 // ==========================================================================
 const menuButton = document.querySelector("#menu-toggle");
 const menu = document.querySelector("#menu");
@@ -60,7 +60,7 @@ menuButton.addEventListener("click", () => {
   setMenu(!menu.classList.contains("navbar--open"));
 });
 
-// fecha ao clicar em um link do menu
+// fecha ao clicar em link do menu
 menu.addEventListener("click", (event) => {
   if (event.target.closest("a")) setMenu(false);
 });
@@ -71,7 +71,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 // ==========================================================================
-// ANIMAÇÃO AO ROLAR (elementos com data-reveal)
+// ANIMAÇÃO
 // ==========================================================================
 const revealItems = document.querySelectorAll("[data-reveal]");
 
@@ -89,6 +89,6 @@ if ("IntersectionObserver" in window) {
 
   revealItems.forEach((item) => observer.observe(item));
 } else {
-  // navegador antigo: mostra tudo sem animação
+  //NAVEGADOR ANTIGO NÃO ANIMA
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
