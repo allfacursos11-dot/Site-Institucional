@@ -1,0 +1,13 @@
+/* ==========================================================================
+   RESET
+   ========================================================================== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body, h1, h2, h3, p, ul, ol, dl, dd, figure, address { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+address { font-style: normal; }
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }

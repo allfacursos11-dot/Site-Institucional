@@ -1,0 +1,57 @@
+/* ==========================================================================
+   VARIABLE: cores, fontes, espaços e formas (valores do MOBILE)
+   ========================================================================== */
+:root {
+  /* marca */
+  --color-primary: #d71920;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* tema (muda no modo escuro) */
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-muted: #4d4d4d;
+  --color-surface: #f3f3f3;
+  --color-border: #e0e0e0;
+  --color-header-bg: #ffffff;
+
+  /* apoio */
+  --color-whatsapp: #25d366;
+  --color-error: #b00010;
+
+  /* tipografia */
+  --font-heading: "Bricolage Grotesque", "Arial Black", Arial, sans-serif;
+  --font-body: Figtree, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --fs-base: 1.0625rem;
+  --fs-lead: 1.15rem;
+  --fs-h1: clamp(2.2rem, 7vw, 3.4rem); /* menor, porque a coluna do texto ficou mais estreita */
+  --fs-h2: clamp(1.7rem, 5vw, 2.8rem);
+  --fs-h3: 1.25rem;
+
+  /* espaçamento (o --space-section aumenta no responsive.css) */
+  --space-section: 3.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+
+  /* forma */
+  --radius-sm: 10px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --container-width: 1120px;
+
+  color-scheme: light;
+}
+
+/* modo escuro (é preferência do sistema, não tamanho de tela) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #121212;
+    --color-text: #ffffff;
+    --color-muted: #bdbdbd;
+    --color-surface: #1d1d1d;
+    --color-border: #333333;
+    --color-header-bg: #1d1d1d;
+    color-scheme: dark;
+  }
+}

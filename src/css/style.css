@@ -1,0 +1,36 @@
+/* ==========================================================================
+   STYLE: base global (tags soltas, foco, acessibilidade)
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* altura do header: evita que ele cubra o topo da seção ao clicar no menu */
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: var(--fs-h1); font-weight: 800; }
+h2 { font-size: var(--fs-h2); font-weight: 800; margin-bottom: 0.6em; }
+h3 { font-size: var(--fs-h3); font-weight: 600; }
+
+p { margin-bottom: 1em; max-width: 62ch; }
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

@@ -1,0 +1,100 @@
+/* ==========================================================================
+   RESPONSIVE: o ÚNICO lugar com media query de tamanho de tela.
+   Mobile-first: tudo que está nos outros arquivos já é o celular.
+   Aqui só dizemos o que MUDA a partir de 768px (tablet e computador).
+   Ligue este arquivo POR ÚLTIMO no index.html.
+   ========================================================================== */
+@media (min-width: 768px) {
+
+  /* ---------- espaços maiores ---------- */
+  :root { --space-section: 5.5rem; }
+
+  /* ---------- header: menu aparece em linha e o hambúrguer some ---------- */
+  .header__toggle { display: none; }
+  .header__navbar { gap: 32px; }
+
+  .navbar {
+    display: block;
+    position: static;
+    padding: 0;
+    background: none;
+    border: 0;
+  }
+  .nav__menu { flex-direction: row; gap: 28px; }
+  .nav__item a { padding: 0; }
+
+  /* ---------- seções em 2 colunas ---------- */
+  .hero__container { grid-template-columns: 0.9fr 1.1fr; gap: 48px; } /* imagem maior que o texto */
+
+  .it__container,
+  .tutoring__container,
+  .english__container,
+  .section__split { grid-template-columns: 1fr 1fr; gap: 64px; }
+
+  /* a imagem do reforço volta para o lado direito (ordem do HTML) */
+  .tutoring__badge { order: 0; }
+
+  /* imagens ocupam a coluna toda */
+  .hero__badge,
+  .it__badge,
+  .tutoring__badge,
+  .english__badge { max-width: none; }
+
+  /* ---------- detalhes de componentes ---------- */
+  .tutoring__badge img { box-shadow: 16px 16px 0 var(--color-primary); }
+  .english__card { left: -24px; bottom: 32px; }
+  .form { padding: 32px; }
+
+  /* ---------- sobre nós: 3 números lado a lado ---------- */
+  .facts { grid-template-columns: repeat(3, 1fr); }
+
+  /* ---------- whatsapp flutuante ---------- */
+.whatsapp-float:hover { filter: brightness(1.06); transform: translate(-5px, -10px); }
+  
+/* ---------- footer em linha ---------- */
+  .footer__container { flex-direction: row; justify-content: space-between; }
+
+
+
+ /* ---------- cursos e valores: no computador vira tabela de verdade ---------- */
+  .prices { grid-template-columns: repeat(3, 1fr); }
+
+  .courses__table { display: table; }
+  .courses__body { display: table-row-group; }
+  .courses__row { display: table-row; }
+
+  .courses__head {
+    display: table-header-group;
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .courses__head-cell,
+  .courses__group-cell,
+  .courses__name,
+  .courses__cell { display: table-cell; }
+
+  .courses__head-cell { padding: 16px 28px; font-weight: 600; }
+  .courses__name { width: 30%; padding: 28px; vertical-align: top; }
+  .courses__cell { padding: 28px; vertical-align: top; }
+  .courses__group-cell { padding: 12px 28px; }
+
+  .courses__row--secondary .courses__name,
+  .courses__row--secondary .courses__cell { padding-top: 14px; padding-bottom: 14px; }
+
+  /* listas longas em 2 colunas */
+  .courses__list--wide { display: block; columns: 2; column-gap: 32px; }
+  .courses__list--wide .courses__item { margin-bottom: 8px; break-inside: avoid; }
+
+
+
+}
+
+
+
+ 

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Ajudando a construir seu futuro">
+    <link rel="canonical" href="https://institutoalffa.netlify.app/">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ALFFA CURSOS">
+    <meta property="og:title" content="ALFFA CURSOS">
+    <meta property="og:description" content="Ajudando a construir seu futuro">
+    <meta property="og:url" content="https://institutoalffa.netlify.app/">
+    <meta property="og:image" content="https://institutoalffa.netlify.app/src/assets/images/og-alffa.jpg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <meta property="og:image:alt" content="ALFFA CURSOS - Ajudando a construir seu futuro">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ALFFA CURSOS">
+    <meta name="twitter:description" content="Ajudando a construir seu futuro">
+    <meta name="twitter:image" content="https://institutoalffa.netlify.app/src/assets/images/og-alffa.jpg">
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="src/assets/icons/favicon.svg">
+
+    <!-- avisa o CSS que o JavaScript está ativo (usado pelas animações) -->
+    <script>document.documentElement.classList.add("js");</script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS / styles -->
+    <link rel="stylesheet" href="src/css/variable.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/layout.css">
+    <link rel="stylesheet" href="src/css/components.css">
+    <link rel="stylesheet" href="src/css/animation.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
+
+    <title>ALFFA CURSOS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="#hero"><img src="src/assets/icons/favicon.svg" alt="Logotipo ALFFA CURSOS"></a>
+            </div>
+
+            <div class="header__navbar">
+                <nav class="navbar" id="menu" aria-label="Navegação principal">
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a href="#informatica">Informática</a></li>
+                        <li class="nav__item"><a href="#reforco">Reforço Escolar</a></li>
+                        <li class="nav__item"><a href="#ingles">Inglês</a></li>
+                        <li class="nav__item"><a href="#sobre">Sobre nós</a></li>
+                    </ul>
+                </nav>
+        
+                <a href="#contato" class="btn btn-matricula">Matricule-se</a>
+
+                <button class="header__toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                    <span class="header__toggle-bar"></span>
+                    <span class="header__toggle-bar"></span>
+                    <span class="header__toggle-bar"></span>
+                </button>
+            </div> 
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- HERO -->
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+            <div class="container hero__container">
+                <div class="hero__content" data-reveal="left">
+                    <h1 class="hero__title" id="hero-title">Informática, inglês e reforço escolar. Tudo em um só lugar.</h1>
+                    <p class="hero__description">Aulas práticas, turmas pequenas e professores que acompanham cada aluno. Venha fazer uma aula experimental.</p>
+
+                    <div class="hero__actions">
+                        <a class="btn" href="#contato">Quero uma aula experimental</a>
+                        <a class="btn btn--outline" href="#informatica">Ver os cursos</a>
+                    </div>
+
+                    <ul class="trust">
+                        <li class="trust__item">Turmas pequenas</li>
+                        <li class="trust__item">Certificado de conclusão</li>
+                        <li class="trust__item">19 anos de experiência</li>
+                        <li class="trust__item">Aulas de informática individuais</li>
+                    </ul>
+                </div>
+
+                <div class="hero__badge" data-reveal="right">
+                    <img src="src/assets/images/hero.webp" alt="Mulher desenhando em uma mesa de estudo, com notebook e mesa digitalizadora" fetchpriority="high">
+                </div>
+            </div>
+        </section>
+
+        <!-- INFORMATICA -->
+        <section class="it" id="informatica" aria-labelledby="it-title">
+            <div class="container it__container">
+                <div class="it__badge" data-reveal="left">
+                    <img src="src/assets/images/informatica.webp" alt="Estudante usando o computador em laboratório de informática" loading="lazy">
+                </div>
+                
+                <div class="it__content" data-reveal="right">
+                    <h2 class="it__title" id="it-title">Aprenda informática na prática e abra portas no mercado de trabalho</h2>
+                    <p class="it__description">Do básico ao avançado, você aprende fazendo, com professor ao seu lado. Sai daqui sabendo usar, não só com o certificado.</p>
+                
+                    <ul class="it__trust">
+                        <li class="it__trust-item">Aulas 100% práticas</li>
+                        <li class="it__trust-item">Do iniciante ao avançado</li>
+                        <li class="it__trust-item">Certificado de conclusão</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- REFORÇO ESCOLAR -->
+        <section class="tutoring" id="reforco" aria-labelledby="tutoring-title">
+            <div class="container tutoring__container">
+                <div class="tutoring__content" data-reveal="left">
+                    <h2 class="tutoring__title" id="tutoring-title">Reforço escolar para o aluno entender a matéria de verdade</h2>
+                    <p class="tutoring__description">Acompanhamento de perto, no ritmo de cada aluno, para tirar dúvidas, fazer a lição e chegar mais seguro nas provas.</p>
+                
+                    <ul class="tutoring__trust">
+                        <li class="tutoring__trust-item">Turmas pequenas e atenção individual</li>
+                        <li class="tutoring__trust-item">Ajuda com lição de casa e provas</li>
+                        <li class="tutoring__trust-item">Acompanhamento no ritmo de cada aluno</li>
+                    </ul>
+                </div>
+
+                <div class="tutoring__badge" data-reveal="right">
+                    <img src="src/assets/images/reforco.webp" alt="Menina fazendo lição de casa com lápis e caderno" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- INGLÊS -->
+        <section class="english" id="ingles" aria-labelledby="english-title">
+            <div class="container english__container">
+                <div class="english__badge" data-reveal="left">
+                    <img src="src/assets/images/ingles.webp" alt="Professora explicando inglês na lousa para os alunos" loading="lazy">
+
+                    <!-- card flutuando sobre a imagem (position: absolute) -->
+                    <div class="english__card">
+                        <p class="english__card-title">Conversação desde a primeira aula</p>
+                    </div>
+                </div>
+                
+                <div class="english__content" data-reveal="right">
+                    <h2 class="english__title" id="english-title">Inglês para falar sem medo</h2>
+                    <p class="english__description">Aulas dinâmicas com conversação desde o primeiro dia, para você ganhar confiança no trabalho, nas viagens e nos estudos.</p>
+                
+                    <ul class="english__trust">
+                        <li class="english__trust-item">Aulas dinâmicas e práticas</li>
+                        <li class="english__trust-item">Turmas pequenas</li>
+                        <li class="english__trust-item">Certificado de conclusão</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE NÓS -->
+        <section class="section section--dark about" id="sobre" aria-labelledby="about-title">
+            <div class="container about__container">
+                <h2 class="about__title" id="about-title" data-reveal="up">Sobre a ALFFA CURSOS</h2>
+                <p class="about__description" data-reveal="up"> A ALFFA CURSOS é um instituto profissionalizante com 19 anos de experiência, oferecendo cursos de informática e reforço escolar. 
+                    Com turmas pequenas e foco na prática, já formamos mais de 2000 alunos, preparando-os para o mercado de trabalho e para o sucesso acadêmico.
+                </p>
+
+                <dl class="facts" data-reveal="up">
+                    <div class="facts__item">
+                        <dt class="facts__label">alunos formados</dt>
+                        <dd class="facts__value">2000+</dd>
+                    </div>
+                    <div class="facts__item">
+                        <dt class="facts__label">anos de experiência</dt>
+                        <dd class="facts__value">19</dd>
+                    </div>
+                    <div class="facts__item">
+                        <dt class="facts__label">cursos disponíveis</dt>
+                        <dd class="facts__value">10</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- CURSOS E VALORES -->
+        <section class="section courses" id="cursos" aria-labelledby="courses-title">
+            <div class="container courses__container">
+                <h2 class="courses__title" id="courses-title" data-reveal="up">Cursos e valores</h2>
+                <p class="courses__description" data-reveal="up">Do primeiro contato com o computador ao inglês e ao reforço escolar: veja o que você pode aprender na ALFFA.</p>
+
+                <!-- <dl class="prices" data-reveal="up">
+                    <div class="prices__item">
+                        <dt class="prices__label">cursos a partir de</dt>
+                        <dd class="prices__value">R$ 120,00</dd>
+                    </div>
+                    <div class="prices__item">
+                        <dt class="prices__label">pacotes promocionais a partir de</dt>
+                        <dd class="prices__value">R$ 180,00</dd>
+                    </div>
+                    <div class="prices__item">
+                        <dt class="prices__label">matrícula, com material incluso</dt>
+                        <dd class="prices__value">Grátis</dd>
+                    </div>
+                </dl> -->
+
+                <div class="courses__table-wrap" data-reveal="up">
+                    <table class="courses__table">
+                        <thead class="courses__head">
+                            <tr class="courses__row">
+                                <th class="courses__head-cell" scope="col">Curso</th>
+                                <th class="courses__head-cell" scope="col">O que você aprende</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="courses__body">
+                            <tr class="courses__row">
+                                <th class="courses__name" scope="row">Informática básica</th>
+                                <td class="courses__cell">
+                                    <ul class="courses__list courses__list--wide">
+                                        <li class="courses__item">Noções de computador</li>
+                                        <li class="courses__item">Word</li>
+                                        <li class="courses__item">Excel</li>
+                                        <li class="courses__item">PowerPoint</li>
+                                        <li class="courses__item">Windows</li>
+                                        <li class="courses__item">Internet</li>
+                                        <li class="courses__item">Digitação</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="courses__row">
+                                <th class="courses__name" scope="row">Profissionalizante</th>
+                                <td class="courses__cell">
+                                    <ul class="courses__list courses__list--wide">
+                                        <li class="courses__item">Recursos Humanos</li>
+                                        <li class="courses__item">Auxiliar Administrativo</li>
+                                        <li class="courses__item">Marketing</li>
+                                        <li class="courses__item">Vendas</li>
+                                        <li class="courses__item">Telemarketing</li>
+                                        <li class="courses__item">Atendente de Balcão</li>
+                                        <li class="courses__item">Departamento Pessoal</li>
+                                        <li class="courses__item">Técnicas de Redação</li>
+                                        <li class="courses__item">Oratória</li>
+                                        <li class="courses__item">Técnicas da ABNT</li>
+                                        <li class="courses__item">Desenvolvimento de Currículo</li>
+                                        <li class="courses__item">Gestão de Negócios</li>
+                                        <li class="courses__item">Liderança</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="courses__row">
+                                <th class="courses__name" scope="row">Inglês</th>
+                                <td class="courses__cell">
+                                    <ul class="courses__list">
+                                        <li class="courses__item">Básico</li>
+                                        <li class="courses__item">Intermediário</li>
+                                        <li class="courses__item">Avançado</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="courses__row">
+                                <th class="courses__name" scope="row">Reforço escolar</th>
+                                <td class="courses__cell">
+                                    <ul class="courses__list">
+                                        <li class="courses__item">Acompanhamento</li>
+                                        <li class="courses__item">Atividades</li>
+                                        <li class="courses__item">Revisão de provas</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tbody class="courses__body">
+                            <tr class="courses__row courses__row--group">
+                                <th class="courses__group-cell" scope="colgroup" colspan="2">Outros cursos</th>
+                            </tr>
+                            <tr class="courses__row courses__row--secondary">
+                                <th class="courses__name" scope="row">Web Design</th>
+                                <!-- <td class="courses__cell">HTML, Dreamweaver</td> -->
+                            </tr>
+                            <tr class="courses__row courses__row--secondary">
+                                <th class="courses__name" scope="row">Design Gráfico</th>
+                                <!-- <td class="courses__cell">CorelDraw, Illustrator, Photoshop</td> -->
+                            </tr>
+                            <tr class="courses__row courses__row--secondary">
+                                <th class="courses__name" scope="row">Edição de vídeo</th>
+                                <!-- <td class="courses__cell">Sony Vegas, After Effects</td> -->
+                            </tr>
+                            <tr class="courses__row courses__row--secondary">
+                                <th class="courses__name" scope="row">Robótica</th>
+                                <!-- <td class="courses__cell">Robótica educativa</td> -->
+                            </tr>
+                            <tr class="courses__row courses__row--secondary">
+                                <th class="courses__name" scope="row">Manutenção de micro</th>
+                                <!-- <td class="courses__cell">Limpeza, instalação de programas e drivers, formatação de Windows</td> -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="section section--primary contact" id="contato" aria-labelledby="contact-title">
+            <div class="container section__split section__split--center">
+                <div class="contact__content" data-reveal="left">
+                    <h2 class="contact__title" id="contact-title">Garanta sua vaga</h2>
+                    <p class="contact__description">Preencha o formulário e fale direto com a nossa equipe no WhatsApp.</p>
+                    <p class="contact__note">As turmas são pequenas, por isso as vagas são limitadas.</p>
+                </div>
+
+                <form class="form" id="contact-form" data-reveal="right" novalidate>
+                    <div class="form__field">
+                        <label for="nome">Seu nome</label>
+                        <input class="form__control" id="nome" name="nome" type="text" autocomplete="name" required>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="tel">Telefone com DDD</label>
+                        <input class="form__control" id="tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="interesse">Interesse</label>
+                        <select class="form__control" id="interesse" name="interesse">
+                            <option>Cursos de informática</option>
+                            <option>Reforço escolar</option>
+                            <option>Inglês</option>
+                            <option>Alfabetização para jovens e Adultos</option>
+                            <option>Administrativo</option>
+                                                        
+                        </select>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="msg">Mensagem (opcional)</label>
+                        <textarea class="form__control" id="msg" name="msg" rows="3" placeholder="Digite sua mensagem aqui..."></textarea>
+                    </div>
+
+                    <p class="form__error" id="form-error" role="alert"></p>
+                    <button class="btn btn--block" type="submit">Enviar pelo WhatsApp</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__copy">&copy; ALFFA CURSOS, Instituto Profissionalizante</p>
+            <address class="footer__address">Endereço - EQNP 15/19 BLOCO E LOTE 2 <br> Horário de atendimento - 08:00 às 18:00</address>
+            <p class="footer__social">Instagram: @alffa_cursos</p>
+        </div>
+    </footer>
+
+    <a class="whatsapp-float" id="whatsapp-float" href="https://wa.me/556139654339" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+        <svg class="whatsapp-float__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.2-.7-2.7-1.1-4.4-3.8-4.5-4-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.2.4-.3.7-.2l2 .9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
+    </a>
+
+    <script src="src/js/main.js" defer></script>
+</body>
+</html>
