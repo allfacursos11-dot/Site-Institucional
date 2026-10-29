@@ -1,9 +1,3 @@
-/* ==========================================================================
-   RESPONSIVE: o ÚNICO lugar com media query de tamanho de tela.
-   Mobile-first: tudo que está nos outros arquivos já é o celular.
-   Aqui só dizemos o que MUDA a partir de 768px (tablet e computador).
-   Ligue este arquivo POR ÚLTIMO no index.html.
-   ========================================================================== */
 @media (min-width: 768px) {
 
   /* ---------- espaços maiores ---------- */

@@ -1,8 +1,4 @@
-/* ==========================================================================
-   ANIMATION: elementos entram na tela quando você rola a página.
-   Como usar: no HTML, coloque data-reveal="left", "right" ou "up" no elemento.
-   O main.js adiciona a classe .is-visible quando ele aparece na tela.
-   ========================================================================== */
+
 
 /* só esconde se o JavaScript estiver funcionando (a classe "js" vem do <head>) */
 .js [data-reveal] {
@@ -20,7 +16,6 @@
   transform: none;
 }
 
-/* quem pediu menos movimento no sistema vê tudo parado */
 @media (prefers-reduced-motion: reduce) {
   .js [data-reveal] {
     opacity: 1;

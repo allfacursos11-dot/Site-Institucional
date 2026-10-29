@@ -3,7 +3,7 @@
    ========================================================================== */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem; /* altura do header: evita que ele cubra o topo da seção ao clicar no menu */
+  scroll-padding-top: 5rem; 
 }
 
 body {

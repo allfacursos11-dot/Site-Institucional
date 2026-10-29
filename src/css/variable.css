@@ -28,7 +28,7 @@
   --fs-h2: clamp(1.7rem, 5vw, 2.8rem);
   --fs-h3: 1.25rem;
 
-  /* espaçamento (o --space-section aumenta no responsive.css) */
+  /* espaçamento  */
   --space-section: 3.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
@@ -43,7 +43,7 @@
   color-scheme: light;
 }
 
-/* modo escuro (é preferência do sistema, não tamanho de tela) */
+/* modo escuro  */
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #121212;

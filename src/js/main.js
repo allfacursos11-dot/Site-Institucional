@@ -84,7 +84,7 @@ if ("IntersectionObserver" in window) {
         observer.unobserve(entry.target); // anima só uma vez
       });
     },
-    { threshold: 0.15 } // 15% do elemento precisa aparecer
+    { threshold: 0.15 } 
   );
 
   revealItems.forEach((item) => observer.observe(item));
