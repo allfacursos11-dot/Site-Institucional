@@ -26,6 +26,9 @@ h3 { font-size: var(--fs-h3); font-weight: 600; }
 
 p { margin-bottom: 1em; max-width: 62ch; }
 
+.hero__title { font-size: var(--fs-h1-small); }
+.hero__description { font-size: 10px;}
+
 :focus-visible {
   outline: 3px solid var(--color-primary);
   outline-offset: 3px;

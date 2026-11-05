@@ -28,6 +28,10 @@
   --fs-h2: clamp(1.7rem, 5vw, 2.8rem);
   --fs-h3: 1.25rem;
 
+  /* telas extremamente pequenas */
+  --fs-h1-small: clamp(1.8rem, 7vw, 3.4rem); /* menor, porque a coluna do texto ficou mais estreita */
+
+
   /* espaçamento  */
   --space-section: 3.5rem;
   --space-sm: 1rem;
